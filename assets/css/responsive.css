@@ -1,0 +1,86 @@
+/* =========================================================
+   Responsive overrides
+   Breakpoints target: 1440 / 1366 / 1024 / 768 / 430 / 390 / 375 / 320
+   ========================================================= */
+
+/* ---------- Large desktop polish (<=1440) ---------- */
+@media (max-width: 1440px) {
+    .section, .hero, .header-inner, .footer-inner { max-width: 1120px; }
+}
+
+/* ---------- Laptop (<=1366) ---------- */
+@media (max-width: 1366px) {
+    .projects-grid, .certs-grid { gap: 18px; }
+}
+
+/* ---------- Tablet landscape (<=1024) ---------- */
+@media (max-width: 1024px) {
+    .hero-inner { gap: 32px; }
+    .section-grid.two-col { grid-template-columns: 1fr; }
+    .projects-grid, .certs-grid { grid-template-columns: repeat(2, 1fr); }
+    .skills-grid { grid-template-columns: repeat(4, 1fr); }
+    .nav-list { gap: 18px; }
+}
+
+/* ---------- Tablet portrait (<=768) ---------- */
+@media (max-width: 768px) {
+    .main-nav { display: none; }
+    .hamburger { display: flex; }
+    .mobile-nav { display: block; }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-visual { order: -1; margin-bottom: 12px; }
+    .hero-frame { max-width: 320px; margin: 0 auto; }
+    .hero-actions, .hero-social { justify-content: center; }
+    .hero-description { margin-left: auto; margin-right: auto; }
+
+    .section { padding: 48px 24px; }
+    .header-inner { padding: 12px 20px; }
+
+    .projects-grid, .certs-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: repeat(3, 1fr); }
+
+    .footer-inner { justify-content: center; text-align: center; }
+    .footer-nav { order: 3; }
+}
+
+/* ---------- Large phones (<=430) ---------- */
+@media (max-width: 430px) {
+    .section { padding: 40px 18px; }
+    .hero { padding: 48px 18px 24px; }
+    .header-inner { padding: 12px 16px; }
+
+    .brand-role { display: none; }
+
+    .hero-title { font-size: clamp(2rem, 1.6rem + 4vw, 2.6rem); }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .hero-actions .btn { width: 100%; }
+
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .card { padding: 22px; }
+
+    .cv-card-bottom { flex-direction: column; align-items: stretch; }
+    .cv-card-bottom .btn { width: 100%; justify-content: center; }
+    .cv-icon { display: none; }
+
+    .modal-content { padding: 20px; }
+    .modal-links { flex-direction: column; }
+    .modal-links .btn { width: 100%; }
+}
+
+/* ---------- Small phones (<=390 / 375 / 320) ---------- */
+@media (max-width: 390px) {
+    .hero-frame { max-width: 260px; }
+    .status-badge { font-size: 0.68rem; padding: 7px 12px; }
+    .about-info-row { gap: 14px; }
+}
+
+@media (max-width: 320px) {
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .badge { font-size: 0.65rem; padding: 6px 12px; }
+    .hero-title { font-size: 1.9rem; }
+}
