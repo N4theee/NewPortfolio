@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#111318"/>
+<rect x="42" y="42" width="1116" height="591" rx="26" fill="none" stroke="#6c4dff" stroke-width="3" opacity=".55"/>
+<circle cx="104" cy="104" r="13" fill="#6c4dff"/>
+<text x="90" y="322" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff">Certification</text>
+<text x="90" y="380" font-family="Arial, sans-serif" font-size="28" fill="#a9adb8">Replace with your actual certificate image</text>
+<text x="90" y="558" font-family="Arial, sans-serif" font-size="22" fill="#777d8a">Replace this placeholder with a real project screenshot.</text>
+</svg>

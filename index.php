@@ -167,6 +167,62 @@ $brandIcons = [
         </div>
     </section>
 
+    <!-- ============================================================
+     AI-ASSISTED DEVELOPMENT
+============================================================ -->
+
+<section class="section" id="ai-development">
+
+    <div class="section-header reveal">
+
+        <div>
+
+            <span class="section-label">
+                DEVELOPMENT WORKFLOW
+            </span>
+
+            <h2 class="section-title">
+                <i class="bi bi-stars"></i>
+                AI-Assisted Development
+            </h2>
+
+            <p class="section-description">
+                I use AI as a development support tool for problem-solving,
+                debugging, research, planning, and documentation while
+                reviewing and validating the solutions I implement.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="ai-grid">
+
+        <?php foreach ($aiDevelopment as $item): ?>
+
+            <div class="ai-card reveal">
+
+                <div class="ai-icon">
+                    <i class="bi <?php echo htmlspecialchars($item['icon']); ?>"></i>
+                </div>
+
+                <h3>
+                    <?php echo htmlspecialchars($item['title']); ?>
+                </h3>
+
+                <p>
+                    <?php echo htmlspecialchars($item['description']); ?>
+                </p>
+
+            </div>
+
+        <?php endforeach; ?>
+
+    </div>
+
+</section>
+
     <!-- ============ FEATURED PROJECTS ============ -->
     <section class="section" id="projects">
         <div class="section-header reveal">
@@ -201,41 +257,19 @@ $brandIcons = [
             <?php endforeach; ?>
         </div>
     </section>
-
-    <!-- ============ EXPERIENCE + DOWNLOAD CV ============ -->
-    <section class="section" id="experience">
-        <div class="section-grid two-col">
-
-            <div class="card experience-card reveal">
-                <h2 class="card-title"><i class="bi bi-briefcase" aria-hidden="true"></i> Experience</h2>
-                <ul class="timeline">
-                    <?php foreach ($experience as $job): ?>
-                        <li class="timeline-item">
-                            <span class="timeline-dot" aria-hidden="true"></span>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title"><?php echo htmlspecialchars($job['title']); ?></h3>
-                                <p class="timeline-meta"><?php echo htmlspecialchars($job['company']); ?></p>
-                                <p class="timeline-period"><?php echo htmlspecialchars($job['period']); ?></p>
-                            </div>
-                            <ul class="timeline-points">
-                                <?php foreach ($job['points'] as $point): ?>
-                                    <li><?php echo htmlspecialchars($point); ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-
-            <div class="card cv-card reveal">
+    <!-- ============ RESUME ============ -->
+    <section class="section" id="resume">
+        <div class="card cv-card resume-download-card reveal">
+            <div>
+                <span class="section-label">RESUME</span>
                 <h2 class="card-title"><i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i> Download My CV</h2>
-                <p class="about-text">Get a copy of my resume in PDF format.</p>
-                <div class="cv-card-bottom">
-                    <a href="<?php echo htmlspecialchars($resume['path']); ?>" download="<?php echo htmlspecialchars($resume['filename']); ?>" class="btn btn-primary">
-                        Download CV <i class="bi bi-download" aria-hidden="true"></i>
-                    </a>
-                    <i class="bi bi-file-earmark-pdf cv-icon" aria-hidden="true"></i>
-                </div>
+                <p class="about-text">Download a copy of my resume in PDF format.</p>
+            </div>
+            <div class="cv-card-bottom">
+                <a href="<?php echo htmlspecialchars($resume['path']); ?>" download="<?php echo htmlspecialchars($resume['filename']); ?>" class="btn btn-primary">
+                    Download CV <i class="bi bi-download" aria-hidden="true"></i>
+                </a>
+                <i class="bi bi-file-earmark-pdf cv-icon" aria-hidden="true"></i>
             </div>
         </div>
     </section>
@@ -311,7 +345,6 @@ $brandIcons = [
             </div>
         </div>
     </section>
-
 </main>
 
 <script>
@@ -319,6 +352,7 @@ $brandIcons = [
     // Generated automatically from $projects in includes/data.php — no manual editing needed.
     window.PROJECT_FEATURES = <?php echo json_encode(array_map(function ($p) { return $p['features'] ?? []; }, $projects)); ?>;
     window.PROJECT_DEMOS = <?php echo json_encode(array_map(function ($p) { return $p['demo'] ?? '#'; }, $projects)); ?>;
+
 </script>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>

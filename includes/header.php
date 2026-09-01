@@ -14,7 +14,7 @@
                 <li><a href="#about" class="nav-link" data-section="about">About</a></li>
                 <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
                 <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
-                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
                 <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
                 <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
             </ul>
@@ -40,7 +40,7 @@
             <li><a href="#about" class="mobile-nav-link" data-section="about">About</a></li>
             <li><a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a></li>
             <li><a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a></li>
-            <li><a href="#experience" class="mobile-nav-link" data-section="experience">Experience</a></li>
+            <li><a href="#resume" class="mobile-nav-link" data-section="resume">Resume</a></li>
             <li><a href="#certificates" class="mobile-nav-link" data-section="certificates">Certificates</a></li>
             <li><a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a></li>
         </ul>

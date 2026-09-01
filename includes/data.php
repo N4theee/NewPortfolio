@@ -23,7 +23,7 @@ Quick map:
 // ----------------------------------------------------------------
 // IDENTITY
 // ----------------------------------------------------------------
-$name       = "Nathan Orias";
+$name       = "Nathan Samuel S. Orias";
 $role       = "IT Student | Developer";
 $badge      = "4TH YEAR IT STUDENT";
 $heroTitle  = "Hi, I'm"; // "Nathan" is rendered separately in purple, see index.php
@@ -48,10 +48,10 @@ $aboutInfo = [
 // 'icon' uses Bootstrap Icons class names (https://icons.getbootstrap.com/)
 // ----------------------------------------------------------------
 $socialLinks = [
-    ['icon' => 'bi-github',    'label' => 'GitHub',   'url' => '#'],
-    ['icon' => 'bi-linkedin',  'label' => 'LinkedIn', 'url' => '#'],
-    ['icon' => 'bi-envelope',  'label' => 'Email',     'url' => 'mailto:you@example.com'],
-    ['icon' => 'bi-code-slash','label' => 'Portfolio', 'url' => '#'],
+    ['icon' => 'bi-github',    'label' => 'GitHub',   'url' => 'https://github.com/N4theee/About-Me'],
+    ['icon' => 'bi-linkedin',  'label' => 'LinkedIn', 'url' => 'https://www.linkedin.com/in/nathan-samuel-s-orias-37794028b'],
+    ['icon' => 'bi-envelope',  'label' => 'Email',     'url' => 'nathansamuel.orias@neu.edu.ph'],
+    ['icon' => 'bi-facebook',  'label' => 'Facebook',  'url' => 'https://www.facebook.com/nathansamuel.orias'],
 ];
 
 // ----------------------------------------------------------------
@@ -84,13 +84,48 @@ $skills = [
     ['name' => 'C++',        'icon' => 'cpp',        'category' => 'Programming'],
     ['name' => 'Git',        'icon' => 'git',        'category' => 'Tools'],
     ['name' => 'Laravel',    'icon' => 'laravel',    'category' => 'Framework'],
-    ['name' => 'Linux',      'icon' => 'linux',      'category' => 'OS'],
+    ['name' => 'Java',      'icon' =>  'java',      'category' => 'Programming'],
     ['name' => 'Bootstrap',  'icon' => 'bootstrap',  'category' => 'Framework'],
     ['name' => 'Figma',      'icon' => 'figma',      'category' => 'Design'],
 
     // ADD NEW SKILLS HERE — example:
     // ['name' => 'Java', 'icon' => 'java', 'category' => 'Programming'],
 ];
+// ================================================================
+// AI-ASSISTED DEVELOPMENT
+// ================================================================
+
+$aiDevelopment = [
+
+    [
+        'icon' => 'bi-stars',
+        'title' => 'AI-Assisted Development',
+        'description' =>
+            'Uses AI tools to support software development through '
+            . 'code analysis, debugging, feature planning, technical research, '
+            . 'documentation, and code refinement.'
+    ],
+
+    [
+        'icon' => 'bi-bug',
+        'title' => 'AI-Assisted Debugging',
+        'description' =>
+            'Uses AI to analyze errors, identify possible causes, '
+            . 'review code logic, and support troubleshooting while '
+            . 'validating implemented solutions.'
+    ],
+
+    [
+        'icon' => 'bi-chat-square-text',
+        'title' => 'Prompt Engineering',
+        'description' =>
+            'Creates structured prompts for software development, '
+            . 'technical research, debugging, documentation, '
+            . 'and solution planning.'
+    ],
+
+];
+
 
 // ----------------------------------------------------------------
 // PROJECTS
@@ -106,42 +141,73 @@ $skills = [
 // ----------------------------------------------------------------
 $projects = [
     [
-        'title'        => 'NexStock IMS',
-        'description'  => 'Inventory Management System for electronic components and computer peripherals with role-based access and real-time notifications.',
-        'image'        => 'assets/images/nexstock.png',
-        'technologies' => ['Laravel', 'MySQL'],
-        'github'       => '#',
-        'demo'         => '#',
+        'title'        => 'Proxamity ',
+        'description'  => 'A Proximity - Based Mobile Examination Monitoring System',
+        'image'        => 'assets/images/proxamity.png',
+        'technologies' => ['Flutter', 'Supabase'],
+        'github'       => 'https://github.com/N4theee/CAPSTONE_Revision',
+        'demo'         => 'https://drive.google.com/drive/folders/15CVRV68VP1QUZInOWh-CgFZaEUCZgNm9',
         'features'     => [
-            'Role-based access control for admins and staff',
-            'Real-time low-stock notifications',
-            'Reporting dashboard for inventory movement',
+    'Bluetooth Low Energy (BLE) proximity-based examination monitoring',
+    'Teacher and student role-based authentication',
+    'Create, edit, and manage examinations and questions',
+    'Unique exam code generation for student access',
+    'Real-time student proximity monitoring during examinations',
+    'Automatic detection and logging of out-of-range students',
+    'Automated exam scoring and result generation',
+    'Student rankings based on score and completion time',
+    'Exam history and student attempt records',
+    'BLE-based attendance monitoring and recording',
+    'Centralized examination data management using Supabase',
         ],
     ],
     [
-        'title'        => 'QueQ – Queue System',
-        'description'  => 'Queue management system for university services with real-time tracking and notifications.',
-        'image'        => 'assets/images/queq.png',
-        'technologies' => ['Laravel', 'Socket.io'],
-        'github'       => '#',
-        'demo'         => '#',
-        'features'     => [
-            'Live queue position tracking',
-            'Automated SMS/email notifications',
-            'Admin console for service counters',
-        ],
+        'title'        => 'BananaQueue – Online Queue Management System',
+
+'description'  => 'A real-time online queue management system that allows customers to join queues digitally while staff and administrators manage queue operations efficiently.',
+
+'image'        => 'assets/images/banana.jpg',
+
+'technologies' => ['Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'JWT'],
+
+'github'       => 'https://github.com/ralphbinua/Bananaque-Queuing-System',
+
+'demo'         => 'https://drive.google.com/drive/folders/1XiLrplxluWoWKdWimfVIAu76Z92p9uwf',
+
+'features'     => [
+    'Real-time queue position tracking using Socket.IO',
+    'Role-based access for customers, staff, and administrators',
+    'Digital queue joining, cancellation, and transaction history',
+    'Real-time customer calling and upcoming-turn notifications',
+    'Department and service queue management',
+    'Admin dashboard for monitoring queues and system activity',
+    'Secure authentication and authorization using JWT and bcrypt',
+],
     ],
     [
-        'title'        => 'Cybersecurity Portfolio',
-        'description'  => 'Personal portfolio website showcasing cybersecurity projects, writeups, and certifications.',
-        'image'        => 'assets/images/cyberfolio.png',
-        'technologies' => ['HTML', 'CSS', 'JavaScript'],
-        'github'       => '#',
-        'demo'         => '#',
-        'features'     => [
-            'CTF writeups organized by category',
-            'Certification showcase',
-            'Fully static and lightweight',
+        'title'        => 'OLT - Church Mobile Inventory System',
+
+'description'  => 'A mobile inventory management system designed for Our Lord’s Temple to organize, track, and manage church equipment and departmental assets.',
+
+'image'        => 'assets/images/olt.jpg',
+
+'technologies' => ['Flutter', 'Supabase', 'PostgreSQL'],
+
+'github'       => 'https://github.com/N4theee/OLT_INVENTORY',
+
+'demo'         => 'https://drive.google.com/drive/folders/1DlwpO64blyZHx1yH1DhH-Eg7Y_S1DwfU',
+
+'features'     => [
+    'Department-based inventory management',
+    'Unique item ID generation and asset tracking',
+    'Parent-child inventory tracking for individual item units',
+    'Item condition and status monitoring',
+    'Image attachment for inventory items',
+    'Search, filtering, and pagination',
+    'Activity logs for inventory changes',
+    'Inventory reports and summary statistics',
+    'Soft delete and inventory record management',
+    'Supabase-powered database and data synchronization',
         ],
     ],
 
@@ -158,27 +224,6 @@ $projects = [
 ];
 
 // ----------------------------------------------------------------
-// EXPERIENCE
-// ----------------------------------------------------------------
-// HOW TO ADD EXPERIENCE: copy a block into $experience. Newest first is
-// the usual convention, but order is entirely up to you.
-// ----------------------------------------------------------------
-$experience = [
-    [
-        'title'   => 'IT Support Intern',
-        'company' => 'ABC Tech Solutions',
-        'period'  => 'June 2024 – August 2024',
-        'points'  => [
-            'Assisted with troubleshooting hardware and software issues.',
-            'Maintained system documentation and updated records.',
-            'Supported the IT team in daily operations and projects.',
-        ],
-    ],
-
-    // ADD NEW EXPERIENCE HERE
-];
-
-// ----------------------------------------------------------------
 // CERTIFICATES
 // ----------------------------------------------------------------
 // HOW TO ADD A CERTIFICATE: copy a block into $certificates and point
@@ -186,13 +231,28 @@ $experience = [
 // ----------------------------------------------------------------
 $certificates = [
     [
-        'title'  => 'Cybersecurity Fundamentals',
-        'issuer' => 'Cisco',
-        'date'   => '2025',
-        'image'  => 'assets/images/cert1.png',
-        'link'   => '#',
+        'title'  => 'Prompt Engineering for Everyone',
+        'issuer' => 'Cognitive Class',
+        'date'   => '2026',
+        'image'  => 'assets/images/certificate.png',
+        'link'   => 'https://courses.cognitiveclass.ai/certificates/bd367f106fb74c448f16bb1462014272',
     ],
 
+     [
+        'title'  => 'Machine Learning with Python cognitive class',
+        'issuer' => 'Cognitive Class',
+        'date'   => '2026',
+        'image'  => 'assets/images/cert2.png',
+        'link'   => 'https://courses.cognitiveclass.ai/certificates/51f3ee8576af49c3b10b70f2799fb326',
+    ],
+
+     [
+        'title'  => 'Cognitive Class, SQL and Relational Databases 101',
+        'issuer' => 'Cognitive Class',
+        'date'   => '2026',
+        'image'  => 'assets/images/cert3.png',
+        'link'   => 'https://courses.cognitiveclass.ai/certificates/1d964ee2f3924cda93a9f927625f5b21',
+    ],
     // ADD NEW CERTIFICATES HERE
 ];
 
@@ -201,16 +261,16 @@ $certificates = [
 // Put your PDF at downloads/<filename> and update the path below.
 // ----------------------------------------------------------------
 $resume = [
-    'path'     => 'downloads/resume.pdf',
-    'filename' => 'Nathan-Orias-Resume.pdf', // name the file is downloaded as
+    'path'     => 'downloads/cv.pdf', // path to the PDF file
+    'filename' => 'cv.pdf', // name the file is downloaded as
 ];
 
 // ----------------------------------------------------------------
 // CONTACT
 // ----------------------------------------------------------------
 $contact = [
-    'email'    => 'you@example.com',
-    'github'   => '#',
-    'linkedin' => '#',
+    'email'    => 'nathansamuel.orias@neu.edu.ph',
+    'github'   => 'https://github.com/N4theee/About-Me',
+    'linkedin' => 'https://www.linkedin.com/in/nathan-samuel-s-orias-37794028b',
     'location' => 'Philippines',
 ];
