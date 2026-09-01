@@ -7,11 +7,19 @@
   },
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/",
+      "dest": "/api/index.php"
+    },
+    {
+      "src": "/index.php",
+      "dest": "/api/index.php"
     },
     {
       "src": "/contact-handler.php",
       "dest": "/api/contact-handler.php"
+    },
+    {
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
