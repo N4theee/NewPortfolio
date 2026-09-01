@@ -303,7 +303,12 @@ $brandIcons = [
                 <p class="about-text">Have an opportunity, a question, or just want to say hi? My inbox is open.</p>
 
                 <ul class="contact-list">
-                    <li><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:<?php echo htmlspecialchars($contact['email']); ?>"><?php echo htmlspecialchars($contact['email']); ?></a></li>
+                    <li>
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=<?php echo rawurlencode($contact['email']); ?>" target="_blank" rel="noopener">
+                            <?php echo htmlspecialchars($contact['email']); ?>
+                        </a>
+                    </li>
                     <li><i class="bi bi-github" aria-hidden="true"></i> <a href="<?php echo htmlspecialchars($contact['github']); ?>" target="_blank" rel="noopener">GitHub</a></li>
                     <li><i class="bi bi-linkedin" aria-hidden="true"></i> <a href="<?php echo htmlspecialchars($contact['linkedin']); ?>" target="_blank" rel="noopener">LinkedIn</a></li>
                     <li><i class="bi bi-geo-alt" aria-hidden="true"></i> <?php echo htmlspecialchars($contact['location']); ?></li>

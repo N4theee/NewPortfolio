@@ -50,7 +50,7 @@ $aboutInfo = [
 $socialLinks = [
     ['icon' => 'bi-github',    'label' => 'GitHub',   'url' => 'https://github.com/N4theee/About-Me'],
     ['icon' => 'bi-linkedin',  'label' => 'LinkedIn', 'url' => 'https://www.linkedin.com/in/nathan-samuel-s-orias-37794028b'],
-    ['icon' => 'bi-envelope',  'label' => 'Email',     'url' => 'nathansamuel.orias@neu.edu.ph'],
+    ['icon' => 'bi-envelope',  'label' => 'Email',     'url' => 'https://mail.google.com/mail/?view=cm&fs=1&to=nathansamuel.orias%40neu.edu.ph'],
     ['icon' => 'bi-facebook',  'label' => 'Facebook',  'url' => 'https://www.facebook.com/nathansamuel.orias'],
 ];
 
