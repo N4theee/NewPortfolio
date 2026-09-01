@@ -81,10 +81,9 @@ $skills = [
     ['name' => 'PHP',        'icon' => 'php',        'category' => 'Backend'],
     ['name' => 'Python',     'icon' => 'python',     'category' => 'Programming'],
     ['name' => 'MySQL',      'icon' => 'mysql',      'category' => 'Database'],
-    ['name' => 'C++',        'icon' => 'cpp',        'category' => 'Programming'],
     ['name' => 'Git',        'icon' => 'git',        'category' => 'Tools'],
     ['name' => 'Laravel',    'icon' => 'laravel',    'category' => 'Framework'],
-    ['name' => 'Java',      'icon' =>  'java',      'category' => 'Programming'],
+    ['name' => 'Java',       'icon' => 'java',       'category' => 'Programming'],
     ['name' => 'Bootstrap',  'icon' => 'bootstrap',  'category' => 'Framework'],
     ['name' => 'Figma',      'icon' => 'figma',      'category' => 'Design'],
 

@@ -4,19 +4,18 @@ require_once __DIR__ . '/includes/data.php';
 // Map of skill icon keys -> [Bootstrap icon class fallback, brand colour, label]
 // Add an entry here whenever you introduce a new technology icon in data.php.
 $brandIcons = [
-    'html5'     => ['bi-filetype-html', '#E44D26'],
-    'css3'      => ['bi-filetype-css',  '#264DE4'],
-    'js'        => ['bi-filetype-js',   '#F0DB4F'],
-    'php'       => ['bi-filetype-php',  '#8892BF'],
-    'python'    => ['bi-filetype-py',   '#3776AB'],
-    'mysql'     => ['bi-database',      '#00758F'],
-    'cpp'       => ['bi-filetype-cpp',  '#00599C'],
-    'git'       => ['bi-git',           '#F05032'],
-    'laravel'   => ['bi-hexagon',       '#FF2D20'],
-    'linux'     => ['bi-terminal',      '#FCC624'],
-    'bootstrap' => ['bi-bootstrap',     '#7952B3'],
-    'figma'     => ['bi-vector-pen',    '#A259FF'],
-    'java'      => ['bi-cup-hot',       '#EA2D2E'],
+    'html5'     => ['devicon-html5-plain',      '#E44D26'],
+    'css3'      => ['devicon-css3-plain',       '#264DE4'],
+    'js'        => ['devicon-javascript-plain', '#F0DB4F'],
+    'php'       => ['devicon-php-plain',        '#8892BF'],
+    'python'    => ['devicon-python-plain',     '#3776AB'],
+    'mysql'     => ['devicon-mysql-original',   '#00758F'],
+    'git'       => ['devicon-git-plain',        '#F05032'],
+    'laravel'   => ['devicon-laravel-original', '#FF2D20'],
+    'linux'     => ['devicon-linux-plain',      '#FCC624'],
+    'bootstrap' => ['devicon-bootstrap-plain',  '#7952B3'],
+    'figma'     => ['devicon-figma-plain',      '#A259FF'],
+    'java'      => ['devicon-java-plain',       '#EA2D2E'],
 ];
 ?>
 <!DOCTYPE html>
@@ -42,6 +41,7 @@ $brandIcons = [
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -157,7 +157,7 @@ $brandIcons = [
                     ?>
                         <div class="skill-chip">
                             <div class="skill-icon" style="--icon-color: <?php echo htmlspecialchars($iconColor); ?>">
-                                <i class="bi <?php echo htmlspecialchars($iconClass); ?>" aria-hidden="true"></i>
+                                <i class="<?php echo htmlspecialchars($iconClass); ?>" aria-hidden="true"></i>
                             </div>
                             <span class="skill-name"><?php echo htmlspecialchars($skill['name']); ?></span>
                         </div>
@@ -227,7 +227,7 @@ $brandIcons = [
     <section class="section" id="projects">
         <div class="section-header reveal">
             <h2 class="section-title"><i class="bi bi-folder2-open" aria-hidden="true"></i> Featured Projects</h2>
-            <a href="#" class="link-view-all">View All Projects <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+            <a href="https://drive.google.com/drive/folders/1ofRsrBU91XtTBlNN4GhQ_F2hENRoGdid" class="link-view-all">View All Projects <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
         </div>
 
         <div class="projects-grid">
